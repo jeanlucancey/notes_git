@@ -2,39 +2,55 @@
 
 ** Généralités
 
+*** Début des hostilités (création sans modification)
+
 git --version
-(pour connaître le numéro de version)
+(pour connaître le numéro de version, mais surtout pour s'assurer
+que git est là et marche... le numéro de version n'a pas grande
+importance, en fait)
 
 git config --global user.name "Jean-Luc Ancey"
+(variante: "Jean-Luc Ancey Amarelia")
 
 git config --global user.email "triancey@gmail.com"
+(variante: "jlancey@amarelia.ch")
 
 mkdir landingpage
 (par exemple: le nom landingpage avait été choisi par le tutoriel)
 
 cd landingpage
-(sans blague?)
+(sans blague? faut entrer dans le répertoire où on travaille?
+I'd never have guessed!)
 
 git init
+(crée un sous-répertoire .git, avec plein de trucs utiles)
 
 git status
+(à tout moment: permet de voir ce qui a été modifié depuis
+la dernière interaction -- pull ou push -- avec le dépôt)
 
 Créer un fichier à cet endroit là (par ex., index.html)
+(dans l'exemple; en vrai, ça peut être 245 fichiers)
 
 git add [fileName]
 
 git commit -m "Explication du commit"
 
-On modifie les fichiers...
+*** Prise en compte de modifications
+
+Bon, comme Git fait du versioning, on va un peu modifier
+les fichiers...
 
 git add [fichiers modifiés]
 
 git commit -m "Explication de la modification"
 
 git log
-(donne l'explication des modifications)
+(affiche l'explication des modifications)
 
 git branch [nomQu'onVeut]
+(il faut nommer la branche... et tant qu'à faire, lui donner un nom
+qui explique pourquoi on se détache du master)
 
 git branch
 (liste les branches -- l'astérisque dit sur quelle branche on est)
@@ -58,18 +74,18 @@ git checkout master
 git merge [nom de la branche à rapatrier]
 
 git log
-(pour vérifier)
+(pour vérifier si ça a marché)
 
 git branch -d [ nom de la branche à supprimer]
-(on n'est pas obligé, mais c'est recommandé après une fusion)
+(purge; on n'est pas obligé, mais c'est recommandé après une fusion)
 
 ** Travail collaboratif
 
 *** Création du dépôt distant
 
-Créer un compte sur github (ou ailleurs)
+Créer un compte sur le site web de github (ou ailleurs)
 
-Créer un depository en lui donnant un nom
+Toujours sur le web, créer un depository en lui donnant un nom
 
 git remote add origin [URL du dépôt]
 
@@ -81,9 +97,14 @@ git push origin master
 
 *** Utilisation du dépôt distant
 
-(inscription dans Github)
+(l'inscription dans Github doit avoir eu lieu préalablement)
 
-(autorisation par le créateur du dépôt, sur Github, partie Settings)
+(pour cloner un truc présent sur Github, rien de particulier à faire;
+en revanche, pour poster (participer), il faut une autorisation par le
+créateur du dépôt, sur Github, partie Settings du projet -- les
+autorisations sont gérées projet par projet; ça se traduit par l'envoi
+d'un courriel d'invitation, dans lequel il y aura une ligne clicable
+pour valider)
 
 git init
 (du moins je suppose)
@@ -94,8 +115,22 @@ git pull origin master
 
 *** Retour à un commit antérieur
 
+Ce n'est pas recommandé en théorie, mais pour la lecture de mon
+manuel c'est souvent le seul moyen d'être sûr qu'on est bien dans
+le cas de figure décrit à une page précise du bouquin:
+
+git remote add origin [URL du dépôt]
+(si ça n'est pas déjà fait dans le dépôt où l'on se trouve)
+
+git pull origin master
+(pour avoir, en même temps que la dernière version, tout l'historique
+des commits)
+
 git reset <nom_du_commit> --hard
-(attention, c'est dangereux!)
+(attention, c'est dangereux: ça vire tous les fichiers postérieurs
+au commit; c'est précisément ce que je veux faire, mais quand il ne
+s'agit pas d'étudier mon bouquin d'apprentissage c'est généralement
+une très mauvaise idée)
 
 * Adresse de dépôts
 
