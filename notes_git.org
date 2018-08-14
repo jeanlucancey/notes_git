@@ -1,3 +1,7 @@
+* Notes du tutoriel, en vrac
+
+** Généralités
+
 git --version
 (pour connaître le numéro de version)
 
@@ -46,7 +50,7 @@ git commit -m "Explication du commit"
 git log
 (liste des modifications)
 
-* Validation de la branche
+** Validation de la branche
 
 git checkout master
 
@@ -58,9 +62,9 @@ git log
 git branch -d [ nom de la branche à supprimer]
 (on n'est pas obligé, mais c'est recommandé après une fusion)
 
-* Travail collaboratif
+** Travail collaboratif
 
-** Création du dépôt distant
+*** Création du dépôt distant
 
 Créer un compte sur github (ou ailleurs)
 
@@ -74,14 +78,19 @@ git remote
 git push origin master
 (envoie sur le dépôt distant)
 
-** Utilisation du dépôt distant
+*** Utilisation du dépôt distant
 
 (inscription dans Github)
 
 (autorisation par le créateur du dépôt, sur Github, partie Settings)
 
-git remote add [URL du dépôt]
+git init
+(du moins je suppose)
+
+git remote add origin [URL du dépôt]
 
 git pull origin master
 
+* Adresse d'un dépôt
 
+https://github.com/jeanlucancey/notes_git.git
