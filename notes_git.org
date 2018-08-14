@@ -10,6 +10,7 @@ git config --global user.name "Jean-Luc Ancey"
 git config --global user.email "triancey@gmail.com"
 
 mkdir landingpage
+(par exemple: le nom landingpage avait été choisi par le tutoriel)
 
 cd landingpage
 (sans blague?)
@@ -91,6 +92,6 @@ git remote add origin [URL du dépôt]
 
 git pull origin master
 
-* Adresse d'un dépôt
+* Adresse du dépôt
 
 https://github.com/jeanlucancey/notes_git.git
