@@ -92,6 +92,8 @@ git remote add origin [URL du dépôt]
 
 git pull origin master
 
-* Adresse du dépôt
+* Adresse de dépôts
 
 https://github.com/jeanlucancey/notes_git.git
+
+https://github.com/jambonrose/DjangoUnleashed-1.8/
