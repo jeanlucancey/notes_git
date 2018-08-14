@@ -1,0 +1,87 @@
+git --version
+(pour connaître le numéro de version)
+
+git config --global user.name "Jean-Luc Ancey"
+
+git config --global user.email "triancey@gmail.com"
+
+mkdir landingpage
+
+cd landingpage
+(sans blague?)
+
+git init
+
+git status
+
+Créer un fichier à cet endroit là (par ex., index.html)
+
+git add [fileName]
+
+git commit -m "Explication du commit"
+
+On modifie les fichiers...
+
+git add [fichiers modifiés]
+
+git commit -m "Explication de la modification"
+
+git log
+(donne l'explication des modifications)
+
+git branch [nomQu'onVeut]
+
+git branch
+(liste les branches -- l'astérisque dit sur quelle branche on est)
+
+git checkout [nomdelabranche]
+(git checkout master revient au master... je crois)
+
+On reremodifie ce qu'on veut...
+
+git add [nomsDesFichiers]
+
+git commit -m "Explication du commit"
+
+git log
+(liste des modifications)
+
+* Validation de la branche
+
+git checkout master
+
+git merge [nom de la branche à rapatrier]
+
+git log
+(pour vérifier)
+
+git branch -d [ nom de la branche à supprimer]
+(on n'est pas obligé, mais c'est recommandé après une fusion)
+
+* Travail collaboratif
+
+** Création du dépôt distant
+
+Créer un compte sur github (ou ailleurs)
+
+Créer un depository en lui donnant un nom
+
+git remote add origin [URL du dépôt]
+
+git remote
+(voit ce qu'il y a à distance)
+
+git push origin master
+(envoie sur le dépôt distant)
+
+** Utilisation du dépôt distant
+
+(inscription dans Github)
+
+(autorisation par le créateur du dépôt, sur Github, partie Settings)
+
+git remote add [URL du dépôt]
+
+git pull origin master
+
+
