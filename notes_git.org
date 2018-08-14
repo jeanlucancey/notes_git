@@ -92,6 +92,11 @@ git remote add origin [URL du dépôt]
 
 git pull origin master
 
+*** Retour à un commit antérieur
+
+git reset <nom_du_commit> --hard
+(attention, c'est dangereux!)
+
 * Adresse de dépôts
 
 https://github.com/jeanlucancey/notes_git.git
