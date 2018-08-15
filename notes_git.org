@@ -137,3 +137,26 @@ une très mauvaise idée)
 https://github.com/jeanlucancey/notes_git.git
 
 https://github.com/jambonrose/DjangoUnleashed-1.8/
+
+* Exemple d'une récupération depuis Github
+
+Sur la marge gauche: ce que je tape au prompt
+
+En retrait de trois espaces: les réponses obtenues
+
+mkdir notes_git
+cd notes_git
+git --version
+   git version 1.7.10.4
+git config --global user.name "Jean-Luc Ancey"
+git config --global user.email "jlanceycourteline@amarelia.ch"
+git init
+   Initialized empty Git repository in /home/jlancey/rabiot/notes_git/.git/
+git remote add origin https://github.com/jeanlucancey/notes_git.git
+git pull origin master
+   remote: Counting objects: 29, done.
+   remote: Compressing objects: 100% (23/23), done.
+   remote: Total 29 (delta 12), reused 22 (delta 5), pack-reused 0
+   Unpacking objects: 100% (29/29), done.
+   From https://github.com/jeanlucancey/notes_git
+    * branch            master     -> FETCH_HEAD
