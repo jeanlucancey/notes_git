@@ -1,0 +1,78 @@
+Bonjour a tou·te·s,
+
+aux réunions du 27 et du 3, nous avions entre autre discuté de
+la mise en place d’une “forge” git pour le collectif
+numericoop , déployé en teste, sur une courte durée, puis mis
+en production.
+
+
+Vous la trouverais ici: https://git.numericoop.fr/
+
+Vous pouvez créer un compte, puis vous serez ajouté dans les
+groupes de travail.
+
+
+Voici deux liens pour utiliser la forge et git
+
+
+    Documentation de Gitea (la forge) 2
+
+    Les bases avec git
+
+
+Pour ceux qui ne veulent pas utiliser la ligne de commande, il
+existe des GUI pour exploiter git simplement.
+
+Malheureusement les versions libre de ces logiciel sont …
+moches et compliqué.
+
+Je vous recommandegitkraken 1, disponible sous Gnu/Linux, Mac et
+Windows, le temps de trouver un truc libre et bien.
+
+
+Au lancement on vous demande un nom d’utilisateur et mail, vous
+devez utiliser ceux enregistré sur la forge (gitea)
+
+
+gitkraken login (ne pas remove le compte …):
+
+login: numericoop@yopmail.com
+
+pwd : 123456789
+
+
+il faut ensuite aller dans la configuration, section
+authentification, décocher “local ssh” puis indiquer
+l’emplacement (ou cliquer sur générer), des clés ssh.
+
+Il faut ensuite ajouter la clé publique a la forge (gitea), il y
+a un bouton “copy file content”
+
+
+Vous pouvez maintenant cloner un repos, une fois que vous avez
+effectué vos modifications, vous pouvez revenir sur gitkraken,
+pour voir les changement et les envoyer (push).
+
+
+Bon … J’ai compris, nous alons devoir faire des tuto
+hébergé sur framatube.
+
+
+Le serveur gitea est dimensionné au plus petit, et est
+constitué pour le moment de
+
+
+    1 Intel® Atom™ CPU C3955 @ 2.10GHz
+
+    1Go ram
+
+    25Go ssd
+
+    200Mbit/s non mesuré
+
+
+Il est donc possible d’avoir des erreurs code 500, si c’est
+le cas, rechargez la page et envoyé un message ici, si il y en a
+beaucoup, j’effectuerais une migration rapide (30mn…), vers
+un plan plus “puissant”.
+
