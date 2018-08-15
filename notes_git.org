@@ -138,6 +138,10 @@ https://github.com/jeanlucancey/notes_git.git
 
 https://github.com/jambonrose/DjangoUnleashed-1.8/
 
+https://git.numericoop.fr/Numericoop/TODO.git
+
+https://git.numericoop.fr/Bac_A_Sable/azerty
+
 * Exemple d'une récupération depuis Github
 
 Sur la marge gauche: ce que je tape au prompt
@@ -160,3 +164,20 @@ git pull origin master
    Unpacking objects: 100% (29/29), done.
    From https://github.com/jeanlucancey/notes_git
     * branch            master     -> FETCH_HEAD
+
+* Exemple d'une récupération depuis le Gitea de Numéricoop
+
+git clone https://git.numericoop.fr/Numericoop/TODO.git
+
+git clone https://git.numericoop.fr/Bac_A_Sable/azerty
+
+Plusieurs choses:
+
+- sur Github, les données sont en général publiques, pas sur Gitea;
+du coup, très logiquement, il demande un login (triancey@gmail.com --
+"jeanluc" ne fonctionne pas) et un mot de passe (4416dmbs);
+
+- l'extension ".git" paraît superfétatoire;
+
+- il crée un répertoire ("TODO" ou "azerty") dans lequel
+il faut rentrer.
