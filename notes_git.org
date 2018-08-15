@@ -173,9 +173,10 @@ git clone https://git.numericoop.fr/Bac_A_Sable/azerty
 
 Plusieurs choses:
 
-- sur Github, les données sont en général publiques, pas sur Gitea;
-du coup, très logiquement, il demande un login (triancey@gmail.com --
-"jeanluc" ne fonctionne pas) et un mot de passe (4416dmbs);
+- sur Github, les données sont en général publiques, pas sur
+Gitea; du coup, très logiquement, Gitea demande un Username
+(répondre "triancey@gmail.com" -- car "jeanluc" ne fonctionne pas,
+"jean-luc" non plus) et un mot de passe (4416dmbs);
 
 - l'extension ".git" paraît superfétatoire;
 
