@@ -10,15 +10,15 @@ que git est là et marche... le numéro de version n'a pas grande
 importance, en fait)
 
 git config --global user.name "Jean-Luc Ancey"
-(variante: "Jean-Luc Ancey Amarelia")
+(variantes: "Jean-Luc Ancey Amarelia, Jean-Luc Ancey Courteline")
 
 git config --global user.email "triancey@gmail.com"
-(variante: "jlancey@amarelia.ch")
+(variante: "jlancey@amarelia.ch, jlanceycourteline@amarelia.ch")
 
-mkdir landingpage
-(par exemple: le nom landingpage avait été choisi par le tutoriel)
+mkdir toto
+(par exemple, évidemment: on donne au répertoire le nom qu'on veut)
 
-cd landingpage
+cd toto
 (sans blague? faut entrer dans le répertoire où on travaille?
 I'd never have guessed!)
 
@@ -36,7 +36,10 @@ git add [fileName]
 
 git commit -m "Explication du commit"
 
-*** Prise en compte de modifications
+Attention, à ce stade du récit, le commit n'est pris en
+compte que localement.
+
+*** Travail sur une branche à part
 
 Bon, comme Git fait du versioning, on va un peu modifier
 les fichiers...
@@ -44,6 +47,9 @@ les fichiers...
 git add [fichiers modifiés]
 
 git commit -m "Explication de la modification"
+
+(Attention, à ce stade, la modification n'a eu lieu
+que localement)
 
 git log
 (affiche l'explication des modifications)
@@ -81,9 +87,10 @@ git branch -d [ nom de la branche à supprimer]
 
 ** Travail collaboratif
 
-*** Création du dépôt distant
+*** Création du dépôt distant et publication sur lui
 
-Créer un compte sur le site web de github (ou ailleurs)
+Créer un compte sur le site web de github (ou le Gitea de
+Numéricoop, ou ailleurs)
 
 Toujours sur le web, créer un depository en lui donnant un nom
 
@@ -95,16 +102,20 @@ git remote
 git push origin master
 (envoie sur le dépôt distant)
 
-*** Utilisation du dépôt distant
+*** Recopiage d'un dépôt distant
 
-(l'inscription dans Github doit avoir eu lieu préalablement)
+(l'inscription dans Github, ou sur un autre gestionnaire de
+dépôts du type du Gitea de Numéricoop, doit avoir eu lieu préalablement)
 
-(pour cloner un truc présent sur Github, rien de particulier à faire;
-en revanche, pour poster (participer), il faut une autorisation par le
-créateur du dépôt, sur Github, partie Settings du projet -- les
-autorisations sont gérées projet par projet; ça se traduit par l'envoi
-d'un courriel d'invitation, dans lequel il y aura une ligne clicable
-pour valider)
+Pour cloner un truc présent sur Github, rien de particulier à faire
+(c'est différent sur le Gitea de Numéricoop, qui n'est pas public et
+demandera donc un mot de passe même pour simplement recopier le
+contenu d'un repository); en revanche, pour poster (participer),
+il faut, même sur Github, une autorisation par le créateur du dépôt
+(sur Github au moins, on fait ça dans la partie Settings du projet).
+Les autorisations, au moins sur Github, sont gérées projet par projet;
+ça se traduit par l'envoi d'un courriel d'invitation, dans lequel il
+y aura une ligne clicable pour valider.
 
 git init
 (du moins je suppose)
@@ -149,20 +160,35 @@ Sur la marge gauche: ce que je tape au prompt
 En retrait de trois espaces: les réponses obtenues
 
 mkdir notes_git
+
 cd notes_git
+
 git --version
+
    git version 1.7.10.4
+
 git config --global user.name "Jean-Luc Ancey"
+
 git config --global user.email "jlanceycourteline@amarelia.ch"
+
 git init
+
    Initialized empty Git repository in /home/jlancey/rabiot/notes_git/.git/
+
 git remote add origin https://github.com/jeanlucancey/notes_git.git
+
 git pull origin master
+
    remote: Counting objects: 29, done.
+
    remote: Compressing objects: 100% (23/23), done.
+
    remote: Total 29 (delta 12), reused 22 (delta 5), pack-reused 0
+
    Unpacking objects: 100% (29/29), done.
+
    From https://github.com/jeanlucancey/notes_git
+
     * branch            master     -> FETCH_HEAD
 
 * Exemple d'une récupération depuis le Gitea de Numéricoop
@@ -171,14 +197,15 @@ git clone https://git.numericoop.fr/Numericoop/TODO.git
 
 git clone https://git.numericoop.fr/Bac_A_Sable/azerty
 
+Nota: l'extension ".git" paraît superfétatoire.
+
 Plusieurs choses:
 
 - sur Github, les données sont en général publiques, pas sur
 Gitea; du coup, très logiquement, Gitea demande un Username
-(répondre "triancey@gmail.com" -- car "jeanluc" ne fonctionne pas,
-"jean-luc" non plus) et un mot de passe (4416dmbs);
-
-- l'extension ".git" paraît superfétatoire;
+(il faut répondre par l'adresse de courriel qu'on a donnée;
+l'alias ou nickname ne fonctionne pas) et le mot de passe
+correspondant;
 
 - il crée un répertoire ("TODO" ou "azerty") dans lequel
 il faut rentrer.
