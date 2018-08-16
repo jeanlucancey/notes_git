@@ -153,6 +153,10 @@ https://git.numericoop.fr/Numericoop/TODO.git
 
 https://git.numericoop.fr/Bac_A_Sable/azerty
 
+* Une partie bordélique à titre expérimental
+
+- J'écris ceci depuis Courteline.
+
 * Exemple d'une récupération depuis Github
 
 Sur la marge gauche: ce que je tape au prompt
