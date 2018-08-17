@@ -2,7 +2,7 @@
 
 ** Généralités
 
-*** Début des hostilités (création sans modification)
+*** Création sans modification
 
 git --version
 (pour connaître le numéro de version, mais surtout pour s'assurer
