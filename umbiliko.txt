@@ -78,6 +78,8 @@ hejme, helpante min per miaj bonegaj vortaroj.
 forgesi ĝin, estas kontroli kontojn kun la tri tunoj da resumoj
 (tabeloj) ke mia banko min alsendas.
 
+== Relu sur Alphosting
+
 
 Jaŭdon, la 16an de aŭgusto 2018.
 
