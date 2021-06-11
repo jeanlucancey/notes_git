@@ -1,5 +1,4 @@
 # notes_git
 
-'tainpu, mais c'est quoi ce boxon?
-
-Bon, je modifie ça sur Amarelia, et à partir d'une branche.
+Je modifie un peu ce fichier, en date du vendredi
+11 juin 2021.
